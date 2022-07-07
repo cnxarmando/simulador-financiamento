@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Simulador financiamento</title>
+</head>
+<body>
+  <h1>Simulador de financiamento</h1>
+  <h2>Sistema de Amortização Constante (SAC)</h2>
+  <p id="#">Voltar ao <span><a href="../index.html">inicio</a> </span></p>
+  <form id="formulario">
+    <input id="textoValor" type="text" placeholder="Valor do Bem">
+    <input id="textoEntrada" type="text" placeholder="Valor da Entrada">
+    <input id="textoJuros" type="text" placeholder="Taxa de Juros ao mês %">
+    <input id="textoPrazo" type="text" placeholder="Prazo (em meses)">
+    <button id="botaoCalcular" type="submit">Calcular</button>
+    <input id="comCarencia" type="checkbox">Com Carência?
+    <select name="" id="listaSuspensa" hidden>
+      <option value="2">2 meses</option>
+      <option value="3">3 meses</option>
+      <option value="4">4 meses</option>
+    </select>
+  </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Nº</th>
+          <th>Valor da parcela</th>
+          <th>Juros %</th>
+          <th>Amortização</th>
+          <th>Saldo devedor</th>
+        </tr>
+      </thead>
+      <tbody id="corpoTabela">
+
+      </tbody>
+    </table>
+    <article>
+      <h1>O que é SAC</h1>
+      <p>Descrição......</p>
+    </article>
+
+  <script type="module" src="../script/simulador.js"></script>
+</body>
+</html>
